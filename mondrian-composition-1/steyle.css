@@ -9,7 +9,7 @@ body {
 
 .container {
     width: 748px;
-    height: 748px;
+    height: 748;
     background-color: #000;
     display: grid;
     grid-template-columns:320px 198px 153px 50px ;
@@ -53,4 +53,21 @@ grid-row: span 2;
 
 .black {
    background-color: #232629;;
+}
+
+@media (max-width: 790px) and (min-width: 650px) {
+    .container {
+        grid-template-columns: 160px 99px 76.5px 25px; 
+        grid-template-rows: 207px 65px 77.5px 11px; 
+        margin:200px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .container {
+        grid-template-columns: 160px 99px 76.5px 25px; 
+        grid-template-rows: 207px 65px 77.5px 11px; 
+        margin: 130px;
+    }
 }
